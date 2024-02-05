@@ -8,12 +8,12 @@ class tarefaController{
 
     //Criação da rota para o app
     static rotas(app){
-        app.get("/tarefa", tarefaController.listar)
+        app.get(`/tarefa/`, tarefaController.listar)
     }
 
     //Criação do método listar que irá imprimir o texto na tela
     static listar(req, res){
-       res.send("Rota ativada com get e recurso tarefa: lista de tarefas deve ser retornada")
+       res.send(`Rota ativada com get e recurso tarefa: lista de tarefas deve ser retornada`)
     }
 }
 

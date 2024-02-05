@@ -3,6 +3,7 @@
 const Express = require('express')
 //atribuiu a variável app todos os modulos carregados na variável Express
 const app = Express()
+const port=3500
 
 
 //Carregou para este arquivos os módulos usuarioController e tarefaControllers
@@ -20,6 +21,6 @@ tarefaController.rotas(app)
 
 
 // Iniciei o servidor
-app.listen(3500,function(req,res){
-    console.log("Rodando servidor")
+app.listen(port,function(req,res){
+    console.log(`Rodando servidor http://localhost:${port}/usuario`)
 })
